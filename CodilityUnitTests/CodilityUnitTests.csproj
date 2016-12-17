@@ -59,7 +59,7 @@
     <Compile Include="Arrays\ArraysTests.cs" />
     <Compile Include="Challenges\WinterLights.cs" />
     <Compile Include="Iterations\IterationTests.cs" />
-    <Compile Include="PrefixSums\CountDivTests.cs" />
+    <Compile Include="PrefixSums\PrefixSumsTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

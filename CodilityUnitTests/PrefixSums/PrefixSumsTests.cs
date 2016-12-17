@@ -13,6 +13,39 @@ namespace CodilityUnitTests.PrefixSums
     [TestClass]
     public class PrefixSums
     {
+
+        [TestMethod]
+        public void GeometricRangeQueryTest()
+        {
+            Random rnd = new Random((int)DateTime.Now.Ticks);
+
+            string S = "CGCCCCCGGGGGGGGCCGGCCGGCGCATATTATACTCCTTCCTTTATGGGGGGCCGGCCGGCGCATATTATACTCCTTCCTTTATATGTGTGTGTGGCGCGCGAATATCCCCCCTCCTTCCTTTATATGTGTGTGTGGCGCCCCTTTTTTACGTACGGACTGACTTACGTACGGACT";
+
+            for (int i = 0; i < 1000; i++)
+            {
+                int size = rnd.Next(2, S.Length);
+                int[] P = new int[size];
+                int[] Q = new int[size];
+
+                for(int i2 = 0; i2 < size; i2++)
+                {
+                    int v = rnd.Next(0, size);
+                    int v2 = rnd.Next(0, size);
+                    P[i2] = Math.Min(v, v2);
+                    Q[i2] = Math.Max(v, v2);
+                }
+
+                
+                int[] t1 = GeometricRangeQuery.solution(S,P,Q);
+                int[] t2 = GeometricRangeQuery.solution1(S,P,Q);
+
+                CollectionAssert.AreEqual(t1, t2, "fail");
+            }
+        }
+
+
+
+
         [TestMethod]
         public void MinAvgTwoSliceTest()
         {
