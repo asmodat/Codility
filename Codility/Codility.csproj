@@ -58,6 +58,7 @@
     <Compile Include="PrefixSums\PassingCars.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sorting\Triangle.cs" />
     <Compile Include="Sorting\MaxProductOfThree.cs" />
     <Compile Include="Sorting\Distinct.cs" />
     <Compile Include="Tests\Flextrade.cs" />
