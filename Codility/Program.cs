@@ -16,10 +16,10 @@ namespace Codility
     {
         static void Main(string[] args)
         {
-            //MaxProductOfThree.solution(new int[] { -3, 1, 2, -2, 5, 6 });
 
-            Brackets.solution("[()()]");
-            //Brackets.solution("([)()]");
+            StoneWall.solution(new int[] {8,8,5,7,9,8,7,4,5 });
+            StoneWall.solution(new int[] { 3,2,1 });
+            StoneWall.solution(new int[] { 1,2,3,3,2,1 });
 
             Console.Read();
         }
