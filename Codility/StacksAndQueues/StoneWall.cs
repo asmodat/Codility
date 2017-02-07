@@ -5,8 +5,32 @@ namespace Codility.StacksAndQueues
 {
     public class StoneWall
     {
-        //100% correctness / 77% preformance / 85% total
+        //100%
         public static int solution(int[] H)
+        {
+            int tmp = 0, cnt = 0;
+            Stack<int> st = new Stack<int>();
+
+            foreach (int h in H)
+            {
+                while (true)
+                    if (h > tmp || st.Count == 0 || st.Peek() < h)
+                    {
+                        st.Push(h);
+                        cnt++;
+                        break;
+                    }
+                    else if (st.Peek() > h) st.Pop();
+                    else if (st.Peek() == h) break;
+
+                tmp = h;
+            }
+
+            return cnt;
+        }
+
+        //100% correctness / 77% preformance / 85% total
+        public static int solution2(int[] H)
         {
             int l = H.Length, i = 0, curr, min, prev = 0, cntr = 0;
 
