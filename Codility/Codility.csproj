@@ -62,6 +62,7 @@
     <Compile Include="Sorting\Triangle.cs" />
     <Compile Include="Sorting\MaxProductOfThree.cs" />
     <Compile Include="Sorting\Distinct.cs" />
+    <Compile Include="StacksAndQueues\Fish.cs" />
     <Compile Include="StacksAndQueues\StoneWall.cs" />
     <Compile Include="StacksAndQueues\Brackets.cs" />
     <Compile Include="Tests\Flextrade.cs" />

@@ -5,7 +5,7 @@ namespace Codility.StacksAndQueues
 {
     public class StoneWall
     {
-        //100%
+        //100% - coudn't figure it out by myself O(N)
         public static int solution(int[] H)
         {
             int tmp = 0, cnt = 0;
@@ -29,7 +29,7 @@ namespace Codility.StacksAndQueues
             return cnt;
         }
 
-        //100% correctness / 77% preformance / 85% total
+        //100% correctness / 77% preformance / 85% total - my flor removal approach O(N^2)
         public static int solution2(int[] H)
         {
             int l = H.Length, i = 0, curr, min, prev = 0, cntr = 0;
